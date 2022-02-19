@@ -1,38 +1,45 @@
+.logo {
+	width: 50%;
+	margin-bottom: 4px;
+}
+
+.AppHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.AppContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-items: center;
+}
+
 .App {
-  text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pattern {
+	height: 24px;
+	width: 100%;
+	background: url(../public/img/stem-pattern.png);
+	background-repeat: repeat-x;
+	background-size: auto 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+	background-color: rgb(213, 253, 213);
+	border: 2px solid rgb(162, 255, 162);
+	border-radius: 4px;
+	height: 28px;
+	font-size: 12pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:active {
+	background-color: rgb(162, 255, 162);
 }

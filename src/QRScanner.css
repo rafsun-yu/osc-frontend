@@ -1,0 +1,16 @@
+.qrScanner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.scanBtn {
+	margin-left: 16px;
+}
+
+.steps {
+	border: 2px solid rgb(211, 222, 253);
+	border-radius: 4px;
+	padding: 8px;
+	background-color: rgb(247, 249, 255);
+}
