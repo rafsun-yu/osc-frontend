@@ -19,7 +19,7 @@
 }
 
 .App {
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	flex-direction: column;
 }
@@ -42,4 +42,17 @@
 
 .btn:active {
 	background-color: rgb(162, 255, 162);
+}
+
+a {
+	color: rgb(250, 108, 139);
+}
+
+.hint {
+	font-size: 12pt;
+	border: 1px solid rgb(255, 235, 52);
+	border-radius: 4px;
+	padding: 8px;
+	background-color: rgb(255, 253, 233);
+	max-width: 90%;
 }

@@ -1,20 +1,52 @@
 import "./NextChallange.css";
 import QRScanner from "./QRScanner";
+import React, { useState, useEffect } from "react";
 
-function NextChallange() {
-	return (
-		<div className="NextChallange">
-			<div className="welcome">Let's visit another exhibition hall!</div>
-			<div>
-				You've been playing around %EXHIBIT NAME%. Hope you learned something
-				new.
-				<br></br>
-				<br></br>I bet you will enjoy %SUGGESTED_EXHIBIT1%, or
-				%SUGGESTED_EXHIBIT1%.
+class NextChallange extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	onClickExhibitionLink = (e) => {
+		this.props.app.setState({
+			displayState: { current: "exhibit", exhibitId: e.target.dataset.id },
+		});
+	};
+
+	render() {
+		return (
+			<div className="NextChallange">
+				<div className="welcome">Let's visit another exhibition hall!</div>
+				<div>
+					Hope you learned something new from the last exhibition hall.
+					<br></br>
+					<br></br>
+					<div>I bet you will enjoy these exhibitions as well:</div>
+					<div className="exhibitionList">
+						{this.props.app.state.exhibits
+							.filter(
+								(i) => i.id != this.props.app.state.displayState.exhibitId
+							)
+							.map((exhibit) => {
+								return (
+									<div>
+										<a
+											className="exhibitionLink"
+											href="#"
+											data-id={exhibit.id}
+											onClick={(e) => this.onClickExhibitionLink(e)}
+										>
+											{exhibit.name}
+										</a>
+										<br></br>
+									</div>
+								);
+							})}
+					</div>
+				</div>
 			</div>
-			<QRScanner></QRScanner>
-		</div>
-	);
+		);
+	}
 }
 
 export default NextChallange;
