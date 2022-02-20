@@ -14,9 +14,11 @@ const QRScanner = (props) => {
 
 	// OnClick - Exhibition link
 	const onClickExhibitionLink = (e) => {
-		console.log(e.target);
 		props.app.setState({
-			displayState: { current: "exhibit", exhibitId: e.target.dataset.id },
+			displayState: {
+				current: "exhibit",
+				exhibitId: parseInt(e.target.getAttribute("data-id")),
+			},
 		});
 	};
 

@@ -39,7 +39,7 @@ class App extends React.Component {
 				case "next":
 					return <NextChallange app={this}></NextChallange>;
 				case "concl":
-					return null;
+					return <Conclusion app={this}></Conclusion>;
 			}
 		}
 	}

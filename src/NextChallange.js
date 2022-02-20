@@ -9,7 +9,10 @@ class NextChallange extends React.Component {
 
 	onClickExhibitionLink = (e) => {
 		this.props.app.setState({
-			displayState: { current: "exhibit", exhibitId: e.target.dataset.id },
+			displayState: {
+				current: "exhibit",
+				exhibitId: parseInt(e.target.getAttribute("data-id")),
+			},
 		});
 	};
 
@@ -21,12 +24,12 @@ class NextChallange extends React.Component {
 					Hope you learned something new from the last exhibition hall.
 					<br></br>
 					<br></br>
-					<div>I bet you will enjoy these exhibitions as well:</div>
+					<div>I bet you will enjoy the other exhibitions as well:</div>
 					<div className="exhibitionList">
 						{this.props.app.state.exhibits
-							.filter(
-								(i) => i.id != this.props.app.state.displayState.exhibitId
-							)
+							.filter((i) => {
+								return !this.props.app.state.visitedExhibits.includes(i.id);
+							})
 							.map((exhibit) => {
 								return (
 									<div>

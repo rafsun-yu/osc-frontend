@@ -61,12 +61,26 @@ class Exhibit extends React.Component {
 	onClickNextButton() {
 		let visitedExhibits = this.props.app.state.visitedExhibits;
 		visitedExhibits.push(this.state.id);
-		this.props.app.setState({
-			visitedExhibits: visitedExhibits,
-			displayState: {
-				current: "next",
-			},
-		});
+
+		if (
+			this.props.app.state.exhibits.every((i) => visitedExhibits.includes(i.id))
+		) {
+			this.props.app.setState({
+				visitedExhibits: visitedExhibits,
+				displayState: {
+					current: "concl",
+					exhibitId: this.state.id,
+				},
+			});
+		} else {
+			this.props.app.setState({
+				visitedExhibits: visitedExhibits,
+				displayState: {
+					current: "next",
+					exhibitId: this.state.id,
+				},
+			});
+		}
 	}
 
 	render() {
