@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/osc-frontend/static/css/main.5b2e8dec.css",
-    "main.js": "/osc-frontend/static/js/main.218c6fce.js",
+    "main.css": "/osc-frontend/static/css/main.16eb968d.css",
+    "main.js": "/osc-frontend/static/js/main.ce4b61af.js",
     "static/media/stem-pattern.png": "/osc-frontend/static/media/stem-pattern.2fc6d23a5d35e503ecb1.png",
     "index.html": "/osc-frontend/index.html",
-    "main.5b2e8dec.css.map": "/osc-frontend/static/css/main.5b2e8dec.css.map",
-    "main.218c6fce.js.map": "/osc-frontend/static/js/main.218c6fce.js.map"
+    "main.16eb968d.css.map": "/osc-frontend/static/css/main.16eb968d.css.map",
+    "main.ce4b61af.js.map": "/osc-frontend/static/js/main.ce4b61af.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2e8dec.css",
-    "static/js/main.218c6fce.js"
+    "static/css/main.16eb968d.css",
+    "static/js/main.ce4b61af.js"
   ]
 }
