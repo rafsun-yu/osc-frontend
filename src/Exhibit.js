@@ -112,7 +112,7 @@ class Exhibit extends React.Component {
 				<div className="continue">
 					<div>
 						After you complete the challanges, you can see what is waiting for
-						you next!.
+						you next!
 					</div>
 					<button
 						className="btn nextBtn"
