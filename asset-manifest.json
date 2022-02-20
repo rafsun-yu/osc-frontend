@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/%7Bosc-frontend%7D/static/css/main.48781bdf.css",
-    "main.js": "/%7Bosc-frontend%7D/static/js/main.218c6fce.js",
-    "static/media/stem-pattern.png": "/%7Bosc-frontend%7D/static/media/stem-pattern.2fc6d23a5d35e503ecb1.png",
-    "index.html": "/%7Bosc-frontend%7D/index.html",
-    "main.48781bdf.css.map": "/%7Bosc-frontend%7D/static/css/main.48781bdf.css.map",
-    "main.218c6fce.js.map": "/%7Bosc-frontend%7D/static/js/main.218c6fce.js.map"
+    "main.css": "/osc-frontend/static/css/main.5b2e8dec.css",
+    "main.js": "/osc-frontend/static/js/main.218c6fce.js",
+    "static/media/stem-pattern.png": "/osc-frontend/static/media/stem-pattern.2fc6d23a5d35e503ecb1.png",
+    "index.html": "/osc-frontend/index.html",
+    "main.5b2e8dec.css.map": "/osc-frontend/static/css/main.5b2e8dec.css.map",
+    "main.218c6fce.js.map": "/osc-frontend/static/js/main.218c6fce.js.map"
   },
   "entrypoints": [
-    "static/css/main.48781bdf.css",
+    "static/css/main.5b2e8dec.css",
     "static/js/main.218c6fce.js"
   ]
 }
